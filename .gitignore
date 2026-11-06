@@ -27,3 +27,5 @@ dataset/
 
 output/trace_calls.jsonl
 output/*.jsonl
+
+test_glm.py

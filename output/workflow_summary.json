@@ -1,0 +1,492 @@
+{
+ "generated_at": "2026-11-06T22:49:47.127320+00:00",
+ "source": {
+  "classifications": "output/classifications.jsonl (model-generated, 3,159 records)",
+  "steps": "output/trace_calls.jsonl (actual ordered tool calls)",
+  "inference": "active Hyde GLM-5.3-Flash model via OpenCode (no OpenAI client)"
+ },
+ "totals": {
+  "classified_traces": 3159,
+  "failed_traces": 0,
+  "unprocessed_traces": 0,
+  "traces_with_workflow_steps": 2123,
+  "traces_with_truncated_steps": 1091,
+  "average_confidence": 0.721
+ },
+ "by_business_use_case": {
+  "retail_order_management": 902,
+  "airline_reservation_service": 524,
+  "software_development": 407,
+  "research_information": 328,
+  "telecom_customer_support": 309,
+  "productivity_automation": 152,
+  "ecommerce_shopping": 104,
+  "data_analysis": 70,
+  "telecom_customer_service": 62,
+  "customer_support": 47,
+  "finance_accounting": 46,
+  "online_shopping": 32,
+  "system_administration": 30,
+  "retail_shopping": 27,
+  "telecom_support": 17,
+  "personal_finance": 16,
+  "document_analysis": 9,
+  "telecom_technical_support": 9,
+  "unknown": 8,
+  "personal_finance_management": 8,
+  "devops_system_administration": 7,
+  "music_playlist_management": 6,
+  "personal_finance_payments": 4,
+  "personal_notes_management": 4,
+  "devops_infrastructure": 4,
+  "music_library_management": 2,
+  "music_playlist_analysis": 2,
+  "travel_planning": 2,
+  "music_playback_control": 2,
+  "cybersecurity_training": 2,
+  "it_infrastructure_administration": 1,
+  "network_security_analysis": 1,
+  "devops_configuration": 1,
+  "ctf_challenge_solving": 1,
+  "cloud_infrastructure_deployment": 1,
+  "social_network_management": 1,
+  "product_research": 1,
+  "log_analysis": 1,
+  "music_playback": 1,
+  "network_administration": 1,
+  "kubernetes_deployment": 1,
+  "security_ctf": 1,
+  "network_security": 1,
+  "personal_payments": 1,
+  "content_writing": 1,
+  "music_playback_automation": 1,
+  "personal_task_management": 1
+ },
+ "by_workflow_category": {
+  "tool_assisted_task": 1362,
+  "agentic_multi_step": 627,
+  "multi_turn_conversation": 424,
+  "data_retrieval_analysis": 292,
+  "code_development": 277,
+  "single_turn_qa": 175,
+  "content_generation": 1,
+  "unknown": 1
+ },
+ "by_workflow_outcome": {
+  "completed": 1402,
+  "unknown": 980,
+  "partially_completed": 529,
+  "failed": 209,
+  "abandoned": 39
+ },
+ "top_workflow_step_sequences": [
+  {
+   "steps": [
+    "mcp__environment__search",
+    "mcp__environment__get_document",
+    "mcp__environment__search",
+    "mcp__environment__get_document",
+    "mcp__environment__search",
+    "mcp__environment__get_document",
+    "mcp__environment__search",
+    "mcp__environment__get_document",
+    "mcp__environment__search",
+    "mcp__environment__get_document",
+    "mcp__environment__search",
+    "mcp__environment__get_document",
+    "mcp__environment__search",
+    "mcp__environment__get_document",
+    "mcp__environment__search",
+    "mcp__environment__get_document",
+    "mcp__environment__search",
+    "mcp__environment__get_document",
+    "mcp__environment__search",
+    "mcp__environment__get_document",
+    "mcp__environment__search",
+    "mcp__environment__get_document",
+    "mcp__environment__search",
+    "mcp__environment__get_document",
+    "mcp__environment__search",
+    "mcp__environment__get_document",
+    "mcp__environment__search",
+    "mcp__environment__get_document",
+    "mcp__environment__search",
+    "mcp__environment__get_document",
+    "mcp__environment__search",
+    "mcp__environment__get_document",
+    "mcp__environment__search",
+    "mcp__environment__get_document",
+    "mcp__environment__search",
+    "mcp__environment__get_document",
+    "mcp__environment__search",
+    "mcp__environment__get_document",
+    "mcp__environment__search",
+    "mcp__environment__get_document"
+   ],
+   "count": 47
+  },
+  {
+   "steps": [
+    "search_catalog",
+    "get_product",
+    "search_catalog",
+    "get_product",
+    "create_cart",
+    "search_catalog",
+    "get_product",
+    "create_cart",
+    "get_cart",
+    "search_catalog",
+    "get_product",
+    "create_cart",
+    "get_cart",
+    "done"
+   ],
+   "count": 44
+  },
+  {
+   "steps": [
+    "search_catalog",
+    "create_cart",
+    "search_catalog",
+    "create_cart",
+    "get_cart",
+    "search_catalog",
+    "create_cart",
+    "get_cart",
+    "done"
+   ],
+   "count": 41
+  },
+  {
+   "steps": [
+    "TodoWrite",
+    "mcp__environment__bash",
+    "TodoWrite",
+    "mcp__environment__bash",
+    "TodoWrite",
+    "mcp__environment__bash",
+    "TodoWrite",
+    "mcp__environment__bash",
+    "TodoWrite",
+    "mcp__environment__bash",
+    "TodoWrite",
+    "mcp__environment__bash",
+    "TodoWrite",
+    "mcp__environment__bash",
+    "TodoWrite",
+    "mcp__environment__bash",
+    "TodoWrite",
+    "mcp__environment__bash",
+    "TodoWrite",
+    "mcp__environment__bash",
+    "TodoWrite",
+    "mcp__environment__bash",
+    "TodoWrite",
+    "mcp__environment__bash",
+    "TodoWrite",
+    "mcp__environment__bash",
+    "TodoWrite",
+    "mcp__environment__bash",
+    "TodoWrite",
+    "mcp__environment__bash",
+    "TodoWrite",
+    "mcp__environment__bash",
+    "TodoWrite",
+    "mcp__environment__bash",
+    "TodoWrite",
+    "mcp__environment__bash",
+    "TodoWrite",
+    "mcp__environment__bash",
+    "TodoWrite",
+    "mcp__environment__bash"
+   ],
+   "count": 35
+  },
+  {
+   "steps": [
+    "mcp__environment__bash",
+    "mcp__environment__finish"
+   ],
+   "count": 34
+  },
+  {
+   "steps": [
+    "mcp__environment__bash"
+   ],
+   "count": 33
+  },
+  {
+   "steps": [
+    "search_catalog",
+    "done"
+   ],
+   "count": 31
+  },
+  {
+   "steps": [
+    "search_catalog",
+    "get_product",
+    "search_catalog",
+    "get_product",
+    "search_catalog",
+    "get_product",
+    "create_cart",
+    "search_catalog",
+    "get_product",
+    "create_cart",
+    "get_cart",
+    "search_catalog",
+    "get_product",
+    "create_cart",
+    "get_cart",
+    "done"
+   ],
+   "count": 30
+  },
+  {
+   "steps": [
+    "mcp__environment__search",
+    "mcp__environment__submit"
+   ],
+   "count": 20
+  },
+  {
+   "steps": [
+    "search",
+    "get_document",
+    "search",
+    "get_document",
+    "search",
+    "get_document",
+    "search",
+    "get_document",
+    "search",
+    "get_document",
+    "search",
+    "get_document",
+    "search",
+    "get_document",
+    "search",
+    "get_document",
+    "search",
+    "get_document",
+    "search",
+    "get_document",
+    "search",
+    "get_document",
+    "search",
+    "get_document",
+    "search",
+    "get_document",
+    "search",
+    "get_document",
+    "search",
+    "get_document",
+    "search",
+    "get_document",
+    "search",
+    "get_document",
+    "search",
+    "get_document",
+    "search",
+    "get_document",
+    "search",
+    "get_document"
+   ],
+   "count": 19
+  },
+  {
+   "steps": [
+    "search"
+   ],
+   "count": 19
+  },
+  {
+   "steps": [
+    "sqlite__list_tables",
+    "sqlite__describe_table",
+    "sqlite__list_tables",
+    "sqlite__describe_table",
+    "sqlite__query",
+    "sqlite__list_tables",
+    "sqlite__describe_table",
+    "sqlite__query",
+    "submit"
+   ],
+   "count": 16
+  },
+  {
+   "steps": [
+    "pdf__pdf_info",
+    "pdf__extract_text",
+    "pdf__pdf_info",
+    "pdf__extract_text",
+    "submit"
+   ],
+   "count": 14
+  },
+  {
+   "steps": [
+    "search_catalog",
+    "get_product",
+    "search_catalog",
+    "get_product",
+    "search_catalog",
+    "get_product",
+    "search_catalog",
+    "get_product",
+    "create_cart",
+    "search_catalog",
+    "get_product",
+    "create_cart",
+    "get_cart",
+    "search_catalog",
+    "get_product",
+    "create_cart",
+    "get_cart",
+    "done"
+   ],
+   "count": 14
+  },
+  {
+   "steps": [
+    "search_products",
+    "add_to_cart",
+    "search_products",
+    "add_to_cart",
+    "done"
+   ],
+   "count": 13
+  }
+ ],
+ "tool_frequency_by_traces": [
+  {
+   "tool": "done",
+   "traces": 493
+  },
+  {
+   "tool": "search_catalog",
+   "traces": 366
+  },
+  {
+   "tool": "message",
+   "traces": 336
+  },
+  {
+   "tool": "mcp__environment__message",
+   "traces": 313
+  },
+  {
+   "tool": "get_product",
+   "traces": 294
+  },
+  {
+   "tool": "create_cart",
+   "traces": 258
+  },
+  {
+   "tool": "get_customer_by_phone",
+   "traces": 241
+  },
+  {
+   "tool": "get_user_details",
+   "traces": 240
+  },
+  {
+   "tool": "mcp__environment__get_user_details",
+   "traces": 237
+  },
+  {
+   "tool": "get_details_by_id",
+   "traces": 233
+  },
+  {
+   "tool": "mcp__environment__search",
+   "traces": 217
+  },
+  {
+   "tool": "get_cart",
+   "traces": 204
+  },
+  {
+   "tool": "TodoWrite",
+   "traces": 187
+  },
+  {
+   "tool": "submit",
+   "traces": 158
+  },
+  {
+   "tool": "mcp__environment__submit",
+   "traces": 155
+  },
+  {
+   "tool": "supervisor__show_account_passwords",
+   "traces": 144
+  },
+  {
+   "tool": "mcp__environment__get_document",
+   "traces": 142
+  },
+  {
+   "tool": "transfer_to_human_agents",
+   "traces": 137
+  },
+  {
+   "tool": "mcp__environment__get_order_details",
+   "traces": 130
+  },
+  {
+   "tool": "mcp__environment__bash",
+   "traces": 129
+  },
+  {
+   "tool": "search_products",
+   "traces": 127
+  },
+  {
+   "tool": "get_order_details",
+   "traces": 127
+  },
+  {
+   "tool": "get_reservation_details",
+   "traces": 124
+  },
+  {
+   "tool": "mcp__environment__get_reservation_details",
+   "traces": 121
+  },
+  {
+   "tool": "add_to_cart",
+   "traces": 119
+  },
+  {
+   "tool": "create_checkout",
+   "traces": 116
+  },
+  {
+   "tool": "mcp__environment__find_user_id_by_name_zip",
+   "traces": 107
+  },
+  {
+   "tool": "mcp__environment__finish",
+   "traces": 104
+  },
+  {
+   "tool": "mcp__environment__supervisor__show_account_passwords",
+   "traces": 103
+  },
+  {
+   "tool": "update_checkout",
+   "traces": 99
+  }
+ ],
+ "unknown_counts": {
+  "business_use_case": 8,
+  "workflow_category": 1,
+  "workflow_outcome": 980,
+  "user_intent": 1291,
+  "workflow_steps_empty": 1036
+ }
+}

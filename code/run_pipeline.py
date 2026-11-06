@@ -50,11 +50,12 @@ def run(classify: bool, max_batches: int | None, limit: int | None, build_zip: b
     batch_builder = BatchBuilder(model=cfg.model or "unconfigured", limits=limits)
 
     trace_summaries: list[dict] = []
+    parse_errors: list[dict] = []
     total_calls = 0
     stopped = limit is not None
 
     with TRACE_CALLS_PATH.open("w", encoding="utf-8") as calls_fh, BATCHES_PATH.open("w", encoding="utf-8") as batches_fh:
-        for trace, call_records in iter_traces(DATASET_PATH, limits):
+        for trace, call_records in iter_traces(DATASET_PATH, limits, parse_errors=parse_errors):
             for call in call_records:
                 calls_fh.write(call.model_dump_json() + "\n")
                 total_calls += 1
@@ -82,6 +83,13 @@ def run(classify: bool, max_batches: int | None, limit: int | None, build_zip: b
 
         for batch in batch_builder.finish():
             batches_fh.write(batch.model_dump_json() + "\n")
+
+    if parse_errors:
+        parse_errors_path = OUTPUT_DIR / "parse_errors.jsonl"
+        with parse_errors_path.open("w", encoding="utf-8") as fh:
+            for err in parse_errors:
+                fh.write(json.dumps(err, ensure_ascii=False) + "\n")
+        print(f"[loader] {len(parse_errors)} unparseable JSON field(s) recorded (trace_id + error) -> {parse_errors_path.name}")
 
     if stopped:
         print(f"[limit] stopped after {total_calls} calls (debug mode)")

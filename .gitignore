@@ -27,5 +27,6 @@ dataset/
 
 output/trace_calls.jsonl
 output/*.jsonl
+output/classifications_401_archive.jsonl
 
 test_glm.py

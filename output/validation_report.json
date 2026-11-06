@@ -1,7 +1,6 @@
 {
- "validator": "pydantic v2",
- "all_valid": true,
- "classification_stage_executed": false,
+ "generated_at": "2026-11-06T22:55:14.046798+00:00",
+ "validator": "pydantic v2 (core artifacts) + extended assessment checks (classifications)",
  "files": {
   "trace_calls.jsonl": {
    "file": "trace_calls.jsonl",
@@ -35,5 +34,76 @@
    "examples": [],
    "status": "valid"
   }
+ },
+ "classifications": {
+  "file": "classifications.jsonl",
+  "exists": true,
+  "records": 3159,
+  "syntax_errors": 0,
+  "duplicate_trace_ids": 0,
+  "unknown_trace_ids": 0,
+  "batch_id_mismatches": 0,
+  "schema_violations": 0,
+  "enum_violations": 0,
+  "confidence_violations": 0,
+  "missing_workflow_steps": 0,
+  "examples": []
+ },
+ "evidence_validity": {
+  "records_with_evidence": 3137,
+  "verified_strict": 3116,
+  "verified_whitespace_normalized": 11,
+  "verified_escape_normalized": 10,
+  "verified_in_full_trace_content": 0,
+  "unverified": 0,
+  "records_with_empty_evidence": 22,
+  "unverified_examples": []
+ },
+ "coverage": {
+  "traces_in_prepared_batches": 3159,
+  "classified": 3159,
+  "missing_trace_ids": [],
+  "extra_trace_ids_not_in_batches": []
+ },
+ "gap_ledgers": {
+  "classification_failed.jsonl": {
+   "exists": true,
+   "entries": 0
+  },
+  "classification_unprocessed.jsonl": {
+   "exists": true,
+   "entries": 0
+  }
+ },
+ "deliverables": {
+  "analytics.json": {
+   "exists": true,
+   "parses": true,
+   "records": 1
+  },
+  "workflow_summary.json": {
+   "exists": true,
+   "parses": true,
+   "records": 1
+  },
+  "trace_summary.json": {
+   "exists": true,
+   "parses": true,
+   "records": 3159
+  }
+ },
+ "cross_file_consistency": {
+  "analytics_classified_traces_matches": true,
+  "workflow_summary_classified_matches": true,
+  "analytics_executed": true
+ },
+ "summary": {
+  "core_artifacts_valid": true,
+  "classifications_valid": true,
+  "coverage_complete": true,
+  "evidence_all_verified": true,
+  "deliverables_present_and_parseable": true,
+  "cross_file_consistent": true,
+  "all_valid": true
  }
 }

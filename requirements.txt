@@ -1,0 +1,4 @@
+pyarrow==26.0.1
+pydantic==2.14.3
+python-dotenv==1.2.4
+openai==3.46.0

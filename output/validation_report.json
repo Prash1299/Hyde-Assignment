@@ -1,0 +1,39 @@
+{
+ "validator": "pydantic v2",
+ "all_valid": true,
+ "classification_stage_executed": false,
+ "files": {
+  "trace_calls.jsonl": {
+   "file": "trace_calls.jsonl",
+   "exists": true,
+   "records": 50000,
+   "validation_errors": 0,
+   "examples": [],
+   "status": "valid"
+  },
+  "trace_summary.json": {
+   "file": "trace_summary.json",
+   "exists": true,
+   "records": 3159,
+   "validation_errors": 0,
+   "examples": [],
+   "status": "valid"
+  },
+  "classification_batches.jsonl": {
+   "file": "classification_batches.jsonl",
+   "exists": true,
+   "records": 170,
+   "validation_errors": 0,
+   "examples": [],
+   "status": "valid"
+  },
+  "analytics.json": {
+   "file": "analytics.json",
+   "exists": true,
+   "records": 1,
+   "validation_errors": 0,
+   "examples": [],
+   "status": "valid"
+  }
+ }
+}

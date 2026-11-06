@@ -1,0 +1,29 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Dataset - do not upload
+dataset/
+*.parquet
+
+# Logs and temporary files
+*.log
+.DS_Store
+
+# IDE settings
+.vscode/
+.idea/
+
+output/trace_calls.jsonl
+output/*.jsonl
